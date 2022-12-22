@@ -14,7 +14,6 @@
             </table>
             
             </div>
-            <div class="bbody">
             <div class="Cart-Container">
                 <div class="Cart-Items">
                     <?php
@@ -132,7 +131,7 @@
                      </table> 
                 </div>
 
-            </div>
+           
         </div>
     </div>
     <?php 
