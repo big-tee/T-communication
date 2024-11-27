@@ -13,12 +13,12 @@
     <div class="col-12 ">
             <table class="text-center" width="100%"> 
                 <tr style="color:green;">
-                    <td><h1><b>HUAWEI PHONE</b></h1></td>
+                <td><a  href="index.php"> <h1><b>HUAWEI PHONE</b></h1> </a> </td> 
                 </tr>
             </table>
             <div class="access">
                 <?php
-                    $samtab_array = $db_handle->runQuery("SELECT * FROM phone WHERE company ='samsung'");
+                    $samtab_array = $db_handle->runQuery("SELECT * FROM phone WHERE company ='huawei'");
                     if (!empty($samtab_array)) 
                     { 
                         foreach($samtab_array as $key=>$value)

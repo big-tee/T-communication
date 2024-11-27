@@ -14,7 +14,6 @@
     <div class="bbody">
             <div class="buycontainer">
                 <form action="order.php" method="POST"> 
-    
                     <table class="table">
                     <tr>
                         <th>item names</th>
@@ -31,29 +30,18 @@
                             $output .="
                             <tr> 
                                 <td>". $values['name']."</td>
-                                <td>".number_format( $values['price'],2)."</td>
-                                
-                                
-                            </tr> 
-                            
-                            
+                                <td>".number_format( $values['price'],2)."</td>                                               
+                            </tr>                         
                             ";
-                            
-                            $total= $total + $values['price'];
-                            
-                            
+                            $total= $total + $values['price'];  
    
                         }
                     }
                         echo $output;
-
-                       
+                      
                     ?>
-                    </table >
-                     </form>
-                    
-                     <form action="order.php" method="POST"> 
-                    <table  class="table " >
+                    </table > 
+                    <table  class="table "  >
                     <tr style="background:grey;color:powderblue;">
                         <td colspan="3" ><h2 align="center" >CUSTOMER'S INFORMATION</h2></td>
                     </tr>
@@ -62,12 +50,12 @@
                         <td colspan="2"><input type="text" id="cusnam" name="cusnam"  required/></td>
                     </tr>
                     <tr>
-                        <td><label >phone number:</label></td>
+                        <td><label >phone number (+234 format):</label></td>
                         <td colspan="2"><input type="text" id="cusph" name="cusph"  required/></td>
                     </tr>
                     <tr>
                         <td><label >Address:</label></td>
-                        <td colspan="2"> <textarea rows ="5" cols="70" id="addr" name="addr" resize="none" style="background-color: white;border-color:black;color:black;" required></textarea></td>
+                        <td colspan="2"> <input type="text"id="addr" name="addr"  required/></td>
                     </tr>
                     <tr>
                         <td><label >Email:</label></td>
